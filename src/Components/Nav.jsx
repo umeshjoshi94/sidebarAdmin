@@ -20,8 +20,7 @@ const Nav =()=>{
         <Tabs to='add'>AddUser</Tabs>
         </Toolbar>
     </Header>
-
-    </>
+</>
 }
 
 export default Nav;

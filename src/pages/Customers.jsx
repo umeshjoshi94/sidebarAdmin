@@ -10,6 +10,7 @@ const Customers = () => {
 
   return (
     <React.Fragment>
+     
         <AllUser />
     </React.Fragment>
   );

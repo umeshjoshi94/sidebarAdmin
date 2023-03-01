@@ -9,32 +9,24 @@ import ProductList from './pages/ProductList';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/navbar';
 import Nav from './Components/Nav';
-import Home from './Components/Home';
+import Home from './pages/Home';
 import AddUser from './Components/AddUser';
 import AllUser from './Components/AllUsers';
 import EditUser from './Components/UpdateUser';
+import Dashboard from './Components/Dashboard';
 function App() {
   return (
     <BrowserRouter>
-   
     <Routes>
        <Route path='/' element={<Home/>}/>
        <Route path='/add' element={<AddUser/>}/>
        <Route path='/all' element={<AllUser/>}/>
        <Route path='/edit/:id' element={<EditUser/>}/>
+       <Route path='/dashboard' element={<Dashboard/>}>
+       
+       </Route>
       </Routes>
    
-    <Navbar>
-      <Routes>
-      
-        <Route path="/customers" element={<Customers/>}/>
-        <Route path="/about" element={<About/>} />
-        <Route path="/comment" element={< Comment/>} />
-        <Route path="/product" element={< Product/>} />
-        <Route path="/analytic" element={< Analytics/>} />
-        <Route path="/productlist" element={< ProductList/>} />
-     </Routes>
-     </Navbar>
     </BrowserRouter>
     
   );

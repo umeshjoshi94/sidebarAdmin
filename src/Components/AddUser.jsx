@@ -33,7 +33,7 @@ const AddUser=()=>{
     const { register, handleSubmit,formState: { errors }  } = useForm();
     const handleRegistration = async (data) => {
          await addUser(data)
-        navigate('/')
+        navigate('/customers')
     }
     return<>
     <Container>
